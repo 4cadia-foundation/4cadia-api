@@ -35,8 +35,7 @@ Make the authentication of the user, for verificar if the password and email be 
         npm (or yarn) add jsonwebtoken
         ``` 
 
-## Fonts: 
-https://www.youtube.com/watch?v=BN_8bCfVp88
+- Fonts: https://www.youtube.com/watch?v=BN_8bCfVp88
 https://www.youtube.com/watch?v=KKTX1l3sZGk&
 https://www.youtube.com/watch?v=Zwdv9RllPqU
 https://www.mongodb.com/       
