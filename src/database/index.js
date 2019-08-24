@@ -1,8 +1,8 @@
-require('dotenv').config()
-const mongoose = require('mongoose');
-const url = `mongodb+srv://${process.env.MONGOUSER}:${process.env.MONGOPASS}@${process.env.DATABASE}.mongodb.net/test?retryWrites=true&w=majority`;
-mongoose.connect(url, { useNewUrlParser: true });
+const firebase = require('firebase');
+const config = require('../config/firebase.config');
 
-mongoose.Promise = global.Promise;
+firebase.initializeApp(config);
 
-module.exports = mongoose;
+const database = firebase.database().ref();
+
+module.exports = database;

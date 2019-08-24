@@ -16,6 +16,8 @@ app.use(cors(corsOptions))
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false}));
 
-require('./src/app/controllers/mailing.controller')(app);
+require('./src/controllers/mailing.controller')(app);
 
-app.listen(process.env.PORT);
+app.listen(process.env.PORT, () => {
+    console.log(`application start in port ${process.env.PORT}`);
+});
