@@ -17,6 +17,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false}));
 
 require('./src/controllers/mailing.controller')(app);
+require('./src/controllers/contact.controller')(app);
 
 app.listen(process.env.PORT, () => {
     console.log(`application start in port ${process.env.PORT}`);
